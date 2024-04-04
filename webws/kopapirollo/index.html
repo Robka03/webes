@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html land="hu">
+    <head>
+        <meta charset="UTF-8">
+        <script src="js/myJs.js"></script>
+        <link rel="stylesheet" href="css/mystyle.css"> 
+        <title>Rock Paper Scissors</title>      
+    </head>
+
+    <body>
+        <p id="cim"><b>ROCK PAPER SCISSORS<b><p>
+            
+            
+            <div class="row">
+                <div class="column">
+                    <img src="imgs/ko.jpg" class="kep" onclick="chooseOption('ko')">
+                
+                </div>
+                <div class="column" >
+                    <img src="imgs/papir.jpg" class="kep" onclick="chooseOption('papir')">
+                 
+                </div>
+                <div class="column">
+                    <img src="imgs/ollo.jpg" class="kep" onclick="chooseOption('ollo')">
+                  
+                </div>
+              </div>
+             
+              <div class="row">
+                <div class="column">
+                    <h1 id="win">Győzelem:</h1>
+                    <h1 id="winwin">Döntetlen:</h1>
+                    <h1 id="lose">Vereség:</h1>
+                </div>
+                <div class="column" >
+                    <img src="imgs/tmp.jpg" class="kep" id="gepKep">
+                 
+                </div>
+
+                <div class="column">
+
+                    <a href="#" class="image-button" onclick="resetGame()">
+                        <img src="imgs/newgame.jpg" alt="Kép">
+                      </a>
+
+
+                </div>
+              </div>
+
+        
+    </body>
+</html>

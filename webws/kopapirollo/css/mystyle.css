@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#cim{
+    font-size: 70px;
+    font-style: normal;
+    padding: 10px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; 
+    text-shadow: [x-offset] [y-offset] [blur-radius] [color];
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    animation: flicker 1.5s infinite alternate;
+}
+
+
+
+.column img {
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa;
+    margin: 3%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.row{
+    margin-top: 2%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+h1{
+
+    font-style: normal;
+    padding: 10px;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa; 
+    text-shadow: [x-offset] [y-offset] [blur-radius] [color];
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 18px; /* Kisebb méret a kisebb ablakokhoz */
+  }
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
